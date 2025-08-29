@@ -4,103 +4,317 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>Portofolio</title>
 </head>
-<header>
-    <div class="main-container">
-        <div class="navbar">
-            <div class="logo">
-                <a href="/">ALFIAN</a>
-            </div>
 
-            <nav>
-                <a href="#hero">Home</a>
-                <a href="#page2">About</a>
-                <a href="#portofolio">Portofolio</a> 
-                <a href="#contact">Contact</a>
-                <a href="https://www.canva.com/design/DAGVnyR7DnE/73dqJut6OqVRjw2cd52YFA/edit?utm_content=DAGVnyR7DnE&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" target="_blank">
-                    <button class="btn">Resume</button>
-                </a>
-            </nav>
-
-            <div class="burger">
-                <div class="line-1"></div>
-                <div class="line-2"></div>
-                <div class="line-3"></div>
+<body>
+    <header>
+        <!-- bagian navbar -->
+        <div class="main-container">
+            <div class="navbar">
+                <div class="logo">
+                    <a href="/">ALFIAN</a>
+                </div>
+    
+                <nav>
+                  
+                    <a class="navbar1   " href="javascript:void(0)" onclick="scrollToContent('hero')">Home</a>
+                    <a href="javascript:void(0)" onclick="scrollToContent('info')">About</a>
+                    <a href="javascript:void(0)" onclick="scrollToContent('page3')">Portofolio</a> 
+                    <a href="javascript:void(0)" onclick="scrollToContent('background')">Contact</a>
+                    <div class="social-links" >
+                        <a download href="file/cv.pdf" target="_blank">
+                            <button class="btn">Resume</button>
+                        </a>
+                        
+                    </div>
+                    
+                </nav>
+                <div class="burger">
+                    <div class="line-1"></div>
+                    <div class="line-2"></div>
+                    <div class="line-3"></div>
+                </div>
+                
             </div>
         </div>
-    </div>
-</header>
-<body>
+    </header>
+    <!-- bagian home -->
+    <main>
     <section id="hero">
+        <div data-aos="fade-right" data-aos-duration="2500">
         <div class="hero-left">
             <h3 class="pre-title">Hello it's me</h3>
             <h1 class="hero-name">Alfian Alfaridzi</h1>
             <h3 class="hero-job">Fullstack Developer</h3>
             <h3 class="hero-portofolio">and This is My Portfolio</h3>
+            <a href="https://instagram.com/alfrdziiiii" target="_blank">
+                <i class="fab fa-instagram"></i>
+               </a>
 
-            <div class="social-links" >
+               <a href="https://github.com/Alfianpiyan" target="_blank">
+                   <i class="fab fa-github"></i>
+                  </a>
             
-                <a href="https://instagram.com/username" target="_blank">
-                 <i class="fab fa-instagram"></i>
-                </a>
-
-                <a href="https://github.com/username" target="_blank">
-                    <i class="fab fa-github"></i>
-                   </a>
-            </div>
         </div>
+        </div>
+        <div data-aos="fade-left" data-aos-duration="2000">
         <div class="hero-right">
-            <img src="assets/Group 2.png" alt="person standing" width="450px">
+            <img src="assets/Group 2.png" alt="person standing" max-width="450px">
+        </div>
         </div>
     </section>
 
-    <section id="page2">
-        <div class="about">
-            <h1>About Me</h1>
-        </div>
-        <div class="content-wrapper">
-            <img src="assets/Group 1.png" width="100px">
-            <p>My name is Alfian Alfaridzi, I am a student who is passionate about becoming a front-end developer, I am passionate because I really like the world of design and coding, therefore I am very excited to learn about the world of design and coding.
-                I am drawn to design and coding because they provide   for creativity and logic to flourish together. In design, I can turn ideas into interesting and intuitive visuals. Meanwhile, coding allows me to turn the design into something interactive and functional. This combination of art and technology makes me even more enthusiastic to continue learning and developing in this field.</p>
-        </div>
-
-    </section>
+    <!-- bagian about -->
+    <div data-aos="fade-up" data-aos-duration="20 fs00"data-aos-anchor-placement="center-bottom">
+     <!-- <section id="background1"> -->
+        <section id="page2">
+            <section id="info">
+                <div class="about">
+                    <h1>About Me</h1>
+                </div>
+                <div class="content-wrapper">
+                    <div class="foto6">
+                    <img src="assets/Group 1.png" width="100px">
+                    </div>
+                    <div class="text">
+                    <p >My name is Alfian Alfaridzi, I am a student who is passionate about becoming a front-end developer, I am passionate because I really like the world of design and coding, therefore I am very excited to learn about the world of design and coding.
+                         I am drawn to design and coding because they provide   for creativity and logic to flourish together. In design, I can turn ideas into interesting and intuitive visuals. Meanwhile, coding allows me to turn the design into something interactive and functional. This combination of art and technology makes me even more enthusiastic to continue learning and developing in this field.</p>
+                    </div>
+                </div>
+            </section> 
+        </section>a
+     <!-- </section>   -->
+    </div>
+        <!-- bagian skill -->
+        <section id="page3">
+            <div class="skil">
+                    <h1>My skills</h1>
+                </div>
+                <div class="gambar">
+                <div class="skil-atas">
+                    <div class="container-skil">
+                        <div class="isi-gambar">
+                            <div class="html">
+                                <img src="assets/Html 5.png" width="90px" srcset="">
+                            </div>
+                                <p>HTML</p>
+                        </div>
+                        <div class="bar">
+                            <div class="bar1"></div>
+                        </div>
+                    </div>
+                    <div class="container-skil">
+                        <div class="isi-gambar2">
+                            <div class="css">
+                                <img src="assets/CSS3.png" width="110px" srcset="" style="margin-top:-5px ;" >
+                            </div>
+                                <p>CSS</p>
+                        </div>
+                        <div class="bar">
+                            <div class="bar2"></div>
+                        </div>
+                    </div>
+                    <div class="container-skil">
+                        <div class="isi-gambar3">
+                            <div class="java">
+                                <img src="assets/Java.png" width="100px" srcset="" style="margin-top: 5px;">
+                            </div>
+                                <p>JAVA</p>
+                        </div>
+                        <div class="bar">
+                            <div class="bar3"></div>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="skil-bawah">
+                <div class="container-skil">
+                    <div class="isi-gambar4">
+                        <div class="python">
+                            <img src="assets/Python.png" width="90px" srcset="">
+                        </div>
+                            <p>PHYTON</p>
+                    </div>
+                    <div class="bar">
+                        <div class="bar4"></div>
+                    </div>
+                </div>
+                <div class="container-skil">
+                    <div class="isi-gambar5">
+                        <div class="js">
+                            <img src="assets/Js.png" width="90px" srcset="" >
+                        </div>
+                            <p>JavaScript</p>
+                    </div>
+                    <div class="bar">
+                        <div class="bar5"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    <!-- </div> -->
         
-    <section id="page3">
-        <div class="skil">
-                <h1>My Skills</h1>
+    <!-- bagian project -->
+        <section>
+            <div class="project">
+                <h1>My Project</h1>
             </div>
-            <div class="gambar">
-            <div class="skil-kanan">
-                <img src="assets/Html 5.png" width="140px" srcset="" style="margin-top:-5rem ;">
-                <img src="assets/CSS3.png" width="150px" srcset="">
-                <img src="assets/Java.png" width="150px" srcset="">
+        </section>
+
+        <section id="page-project">
+            <section id="page4">
+            <div data-aos="fade-right" data-aos-duration="1500">
+                <div class="judul-project">
+                    <div class="judul">
+                    <h2>Project 1</h2>
+                </div>
             </div>
-            <div class="skil-bawah">
-                <img src="assets/Python.png" width="150px">
-                <img src="assets/Js.png" width="150px">
+            <div data-aos="fade-right"data-aos-duration="1500">
+                <div class="tulisan">
+                    <p>The first project, I created a simple <br> website using the HTML and CSS <br> programming languages</p>
+                        <a href="/file/sertifikat_course_123_4179458_230824100610.pdf" target="_blank">
+                            <button class="tbl1">See Project</button>
+                        </a>
+                </div>
             </div>
+            <div data-aos="fade-right" data-aos-duration="1500">
+                <div class="gbr1">
+                    <img src="assets/Group 3.png" alt="" srcset="" width="250px">
+                </div>
+            </div>
+        </section>
+
+            <section id="page5">
+                <div class="project-container">
+                    <div data-aos="fade-left" data-aos-duration="1500">
+                    <div class="gbr2">
+                        <img src="assets/Group 4.png" alt="Project 2" width="200px">
+                    </div>
+                </div>
+                    <div class="content">
+                    <div data-aos="fade-left" data-aos-duration="1500">
+                        <div class="judul2">
+                            <h2>Project 2</h2> 
+                        </div>
+                    </div>
+                    <div data-aos="fade-left" data-aos-duration="1500">
+                                <div class="tulisan2">
+                                    <p>The second project, I created a mobile app design using Figma</p>
+                                    <a href="https://www.figma.com/design/7J0IrcUSVxEqILlETD1FkO/portofolio?node-id=1-2&t=JMNUqXCW84pewINB-1" target="_blank">
+                                        <button class="tbl2">See Project</button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                
+            </section>
+            <section id="page6">
+                <div data-aos="fade-right" data-aos-duration="1500">
+                <div class="judul-project3">
+                        <div class="judul3">
+                        <h2>Project 3</h2>
+                    </div>
+                <div class="tulisan3">
+                    <p>The third project, I made a Doraemon <br>graphic design using Adobe Illustrator</p>
+                        <a href="assets/doraemon.png" target="_blank" >
+                            <button class="tbl3">See Project</button>
+                        </a>
+                </div>
+            </div>
+            <div data-aos="fade-right" data-aos-duration="1500">
+                <div class="gbr3">
+                    <img src="assets/doraemon.png" alt="" srcset="" width="200px">
+                </div>
+            </div>
+            </section>
+            
+            <section id="page7">
+                <div class="project-container4">
+                    <div data-aos="fade-left" data-aos-duration="1500">
+                    <div class="gbr4">
+                        <img src="assets/Group 5.png" alt="Project 2" width="250px">
+                    </div>
+                </div>
+                    <div data-aos="fade-left" data-aos-duration="1500">
+                        <div class="content">
+                            <div class="judul4">
+                                <h2>Project 4</h2>
+                            </div>
+                            <div class="tulisan4">
+                                <p>Fourth project, I made a chrome logo using Adobe Illustrator</p>
+                                <a href="assets/chrome 2 alfian-01.jpg" target="_blank">
+                                    <button class="tbl4">See Project</button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>    
+
+        <!-- bagian contact -->
+
+        <div id="background">
+            <section id="page8">
+                <div class="contact main-container">
+                    <div class="contact-left">
+                        <form class="contact-form" action="https://formspree.io/f/xpwzlnaa" method="post">
+                            <div>
+                                <input type="text" placeholder="Name" name="name">
+                            </div>
+                            <div>
+                                <input type="email" placeholder="Email" name="email">
+                            </div>
+                            <div>
+                                <textarea name= "message" id="message" placeholder="message" cols="30" rows="10"></textarea>
+                                <button class="btn-submit">Send Message</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="contact-right">
+                        <img src="assets/Man programmer writing code and making web design on a PC.png" alt="" width="230 px">
+                    </div>
+                </div>
+            </section>
         </div>
-    </section>
-
-    <section id="page4">
 
     </section>
+</main>
+<footer>
+    <div class="footer1">
+        <p style="font-size: 1rem;">Let's Connect to My Social Media</p>   
+    </div>
+    <div class="footer2">
+        <a href="https://instagram.com/alfrdziiiii" target="_blank"> 
+            <i class="fab fa-instagram"></i>
+           </a>
 
-    <section id="page5">
-
-    </section>
-
-    <section id="page6">
-
-    </section>
-    <section id="page7">
-
-    </section>
-    <section id="page8">
-
-    </section>
+           <a href="https://github.com/Alfianpiyan" target="_blank">
+               <i class="fab fa-github"></i>
+              </a>
+    </div>
+    <div class="footer3">
+        <p>&copy; 2024 Made by Alfian Alfaridzi</p>
+    </div>
+</footer>
+<script src="from.js">
+    
+</script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+  </script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+        AOS.init({
+            once: true, // Animation only happens once
+        });
+    });
+</script>
 </body>
 </html>

@@ -1,0 +1,303 @@
+
+
+@media (max-width: 1024px) {
+    #hero {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-left: 0;
+        margin-top: 0;
+        padding: 2rem;
+        gap: 2rem;
+    }
+
+    .hero-left {
+        text-align: center;
+        max-width: 80%;
+    }
+
+    .hero-left h1.hero-name {
+        font-size: 2.5rem; /* Ukuran lebih kecil untuk tablet */
+    }
+
+    .hero-left h3.hero-job, .hero-left h3.hero-portofolio {
+        font-size: 1.1rem;
+    }
+
+    .hero-right {
+        margin-right: 0;
+        width: 250px;
+    }
+
+    .hero-right img {
+        width: 300px;
+        margin-top:-3rem;
+        margin-left:-5rem ;
+    }
+
+    .social-links {
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    i {
+        font-size: 1.8em;
+    }
+}
+
+/* Mobile View (di bawah 768px) */
+@media (max-width: 768px) {
+    #hero {
+        flex-direction: column;
+        padding: 1.5rem;
+        gap: 1.5rem;
+    }
+
+    .hero-left {
+        text-align: center;
+        max-width: 100%;
+    }
+
+    .hero-left h1.hero-name {
+        font-size: 2rem; /* Ukuran lebih kecil untuk ponsel */
+    }
+
+    .hero-left h3.hero-job, .hero-left h3.hero-portofolio {
+        font-size: 1rem;
+    }
+
+    .hero-right {
+        width: 250px; /* Lebar gambar lebih kecil */
+        margin-left: 10rem;
+    }
+
+    .social-links {
+        justify-content: center;
+        gap: 0.5rem;
+    }
+
+    i {
+        font-size: 1.5em; /* Ikon lebih kecil */
+    }
+}
+
+/* about */
+@media (max-width: 1024px) {
+    .content-wrapper {
+        flex-direction: column;
+        padding: 1rem;
+        gap: 2rem;
+    }
+
+    #page2 img {
+        width: 300px;
+        /* margin-right: 0; */
+    }
+
+    #page2 p {
+        font-size: 18px;
+        line-height: 22px;
+        max-width: 100%;
+        /* margin-left: 0; */
+        text-align: center;
+    }
+
+    .about {
+        font-size: 1.5rem;
+        padding: 1.5rem;
+        transform: translateX(0);
+    }
+}
+
+/* Mobile View (di bawah 768px) */
+@media (max-width: 768px) {
+    .content-wrapper {
+        flex-direction: column;
+        gap: 1rem;
+        max-width: 100%;
+        padding: 1rem;
+    }
+
+    #page2 img {
+        width: 300px;
+        margin-right: 0;
+    }
+
+    #page2 p {
+        font-size: 16px;
+        line-height: 20px;
+        text-align: center;
+        margin-left: 0;
+        padding: 0 1rem;
+    }
+
+    .about {
+        font-size: 1.2rem;
+        padding: 1rem;
+        height: auto;
+        line-height: 1.5;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .burger {
+        display: block;
+        cursor: pointer;
+    }
+
+    
+    nav {
+        position: fixed;
+        width: 50%;
+        right: 0;
+        top: 0;
+        height: 100vh;
+        flex-direction: column;
+        background: blue;
+        border-left:1px solid black;
+        z-index: 9;
+        transform: translateX(100%);
+    }
+
+    nav a {
+        height: 5vh;
+        align-items: center;
+        text-align: center;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .nav-active{
+        transform: translateX(0);
+    }
+}
+
+@media (max-width: 1024px) {
+    .skil-atas, .skil-bawah {
+        gap: 3rem; /* Kurangi jarak antar elemen */
+    }
+
+    .isi-gambar, .isi-gambar2, .isi-gambar3, .isi-gambar4, .isi-gambar5 {
+        width: 8rem; /* Sesuaikan lebar elemen */
+        height: auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .skil-atas {
+        justify-content: center;
+    }
+
+    .skil-bawah {
+        justify-content: center;
+    }
+
+    .isi-gambar, .isi-gambar2, .isi-gambar3, .isi-gambar4, .isi-gambar5 {
+        width: 100%; /* Elemen akan memenuhi layar */
+        max-width: 10rem; /* Batasi ukuran maksimum */
+        margin: 0 auto; /* Rata tengah */
+    }
+}
+
+@media (max-width: 480px) {
+    .skil-atas, .skil-bawah {
+        flex-direction: column; /* Tampilkan elemen secara vertikal */
+        gap: 1.5rem; /* Kurangi jarak antar elemen */
+    }
+
+    .isi-gambar, .isi-gambar2, .isi-gambar3, .isi-gambar4, .isi-gambar5 {
+        width: 90%; /* Elemen hampir memenuhi layar */
+        max-width: 8rem; /* Batasi ukuran maksimum */
+    }
+}
+
+
+/* project */
+/* Tablet Screen (max-width: 768px) */
+@media screen and (max-width: 768px) {
+    .project-container, .project-container4 {
+        flex-direction: column; /* Stack elements vertically */
+        align-items: center;
+    }
+
+    .gbr1, .gbr2, .gbr3, .gbr4 {
+        margin-top: 1rem;
+        transform: translateX(0); /* Reset position for better alignment */
+        text-align: center; /* Center align content */
+    }
+
+    .content, .content4 {
+        align-items: center; /* Center content vertically */
+        text-align: center;
+    }
+
+    .tbl1, .tbl2, .tbl3, .tbl4 {
+        font-size: 1.2rem; /* Slightly smaller buttons */
+    }
+
+    .judul-project, .judul2, .judul3, .judul4 {
+        font-size: 1.5rem; /* Adjust heading size */
+    }
+}
+
+/* Mobile Screen (max-width: 480px) */
+@media screen and (max-width: 480px) {
+    #page-project {
+        margin: 20px; /* Reduce margin */
+        padding: 10px;
+    }
+
+    .project {
+        font-size: 1rem; /* Smaller font size */
+        padding: 10px;
+    }
+
+    .gbr1, .gbr2, .gbr3, .gbr4 {
+        width: 100%; /* Full width */
+        margin-top: 1rem;
+    }
+
+    .tbl1, .tbl2, .tbl3, .tbl4 {
+        font-size: 1rem; /* Smaller buttons */
+        padding: 0.5rem 0.8rem;
+    }
+
+    .judul-project, .judul2, .judul3, .judul4 {
+        font-size: 1.2rem; /* Smaller headings */
+    }
+
+    .tulisan, .tulisan2, .tulisan3, .tulisan4 {
+        font-size: 10px; /* Adjust font size for text */
+    }
+}
+
+/* Tablet (768px hingga 1199px) */
+@media (max-width: 1199px) {
+    .contact {
+        grid-template-columns: 1fr; /* Satu kolom */
+        gap: 2rem;
+    }
+    .contact-right {
+        margin-left: 0;
+        margin-top: 1rem;
+        text-align: center;
+    }
+}
+
+/* Mobile (di bawah 768px) */
+@media (max-width: 768px) {
+    #page8 {
+        padding: 1.5rem; /* Kurangi padding */
+    }
+    .contact {
+        grid-template-columns: 1fr; /* Satu kolom */
+        gap: 1.5rem;
+    }
+    .contact-right img {
+        width: 100%; /* Gambar memenuhi lebar kontainer */
+        max-width: 200px; /* Batasi lebar maksimal */
+        margin: auto;
+    }
+    .btn-submit {
+        width: 100%; /* Tombol memenuhi lebar */
+    }
+}
